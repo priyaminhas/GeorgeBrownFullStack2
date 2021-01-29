@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Content</title>
+        <script>
+            function windowDetails(){
+                var innerHgt = window.innerHeight;
+                console.log("window.innerHeight:"+innerHgt);
+                var innerWdt = window.innerWidth;
+                console.log("window.innerWidth:"+innerWdt);
+                var outerHgt = window.outerHeight;
+                console.log("window.outerHeight:"+outerHgt);
+                var outerWdt = window.outerWidth;
+                console.log("window.outerWidth:"+outerWdt); 
+                if(window.fullScreen){
+                    console.log("window.isFullScreen: True"); 
+                }
+                else{
+                    console.log("window.isFullScreen: False"); 
+                }
+                var windowLoc=window.location;
+                console.log("window location:"+windowLoc);
+                if(window.menubar.visible){
+                    console.log("window.menubar visible: True"); 
+                }
+                else{
+                    console.log("window.menubar visible: False"); 
+                }
+                if(window.scrollbars.visible){
+                    console.log("window.scrollbars visible: True"); 
+                }
+                else{
+                    console.log("window.scrollbars visible: False"); 
+                }
+                if(window.statusbar.visible){
+                    console.log("window.statusbar visible: True"); 
+                }
+                else{
+                    console.log("window.statusbar visible: False"); 
+                }
+                
+                var historyObj = window.history;
+                console.log(historyObj);
+            }
+            windowDetails();
+        </script>
+    </head>
+</html>
